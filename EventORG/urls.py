@@ -19,6 +19,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.home, name='home'),
     path('domain/share/<str:eventID>/', views.shareEvent, name='shareEvent')
 ]
